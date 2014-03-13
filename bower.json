@@ -1,0 +1,20 @@
+{
+  "name": "Philip Tomlinson Website",
+  "version": "0.0.0",
+  "authors": [
+    "Stephen Tomlinson <stephen@stomlinson.org>"
+  ],
+  "license": "none",
+  "homepage": "http://philiptomlinson.co.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "JohnAlbin/normalize-scss#~2.2.0+normalize.2.1.3"
+  }
+}

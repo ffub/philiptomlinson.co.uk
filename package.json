@@ -1,0 +1,16 @@
+{
+  "name": "stephentomlinson.com",
+  "readme": "README.md",
+  "description": "My website",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.2",
+    "matchdep": "~0.3.0",
+    "assemble": "~0.4.36",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-newer": "~0.6.1",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "author": "Stephen Tomlinson"
+}
