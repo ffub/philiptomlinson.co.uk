@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+  padding: 60px 30px;
+}
+
+.row {
+  
+  position: relative;
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .left {
+    position: fixed;
+    width: 230px;
+  }
+  
+  .right {
+    width: 690px;
+    margin-left: 230px + 40px;
+  }
+}

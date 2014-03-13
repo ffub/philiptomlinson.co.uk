@@ -1,0 +1,52 @@
+$whitney: "Whitney SSm A", "Whitney SSm B", sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-margin: $base-line-height * $base-font-size;
+
+body {
+  font-family: $whitney;
+  color: hsl(0, 0%, 30%);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  
+  &:hover {
+    border-bottom: 1px dotted hsl(0, 0%, 80%);
+  }
+}
+
+// Bold items are darker too
+h1, h2, h3, h4, strong, b {
+  color: hsl(0, 0%, 30%);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 24px;
+  line-height: 1.4;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: ($base-font-size*2) 0 $base-margin;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 $base-font-size;
+}
+
+.subtitle {
+  margin-top: -20px;
+  font-weight: 300;
+  font-size: 30px;
+  width: 90%;
+}

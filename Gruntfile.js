@@ -65,7 +65,7 @@ module.exports = function(grunt) {
     
     watch: {
       options: {
-        livereload: false,
+        livereload: true,
         interrupt: true
       },
       gruntfile: {
@@ -80,6 +80,22 @@ module.exports = function(grunt) {
         files: ['**/*.hbs'],
         tasks: ['assemble']
       },
+    },
+    
+    /* Deployment */
+
+    rsync: {
+      options: {
+        recursive: true,
+        syncDest: true
+      },
+      live: {
+        options: {
+          src: "build/",
+          dest: "/sites/www.philiptomlinson.co.uk",
+          host: "stomlinson.org",
+        }
+      }
     },
     
   });

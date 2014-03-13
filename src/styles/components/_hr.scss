@@ -1,0 +1,9 @@
+hr {
+  border: 1px solid;
+  border-width: 1px 0 0 0;
+  border-color: hsl(0, 0%, 80%);
+  
+  &.thick {
+    border-color: $accent;
+  }
+}

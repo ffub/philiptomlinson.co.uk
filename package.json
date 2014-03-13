@@ -1,7 +1,7 @@
 {
-  "name": "stephentomlinson.com",
+  "name": "philiptomlinson",
   "readme": "README.md",
-  "description": "My website",
+  "description": "Dad's website",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.7.2",
@@ -10,7 +10,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-newer": "~0.6.1",
     "grunt-autoprefixer": "~0.7.2",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-rsync": "~0.4.0"
   },
   "author": "Stephen Tomlinson"
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <title>{{title}} - {{description}}</title>
+  <meta charset="utf-8">
+  <meta name="description" content="{{description}}">
+  
+  <!-- Web fonts -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7540672/781204/css/fonts.css" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+  
+</head>
+
+<body>
+  
+  <div class="page">
+    
+    <div class="row">
+  
+      <div class="left">
+      
+        <img src="{{assets}}/images/portrait.jpg">
+        
+        <p><a class="button button-block" href="{{linkedin}}">View on LinkedIn</a></p>
+        <p><a class="button button-block" href="mailto:{{email}}">Get in Touch</a></p>
+      
+      </div>
+  
+      <div class="right">
+  
+        <header class="banner">
+          <h1>{{title}}</h1>
+          <h1 class="subtitle">{{description}}</h1>
+        </header>
+        
+        <div class="contact">
+        
+          <section>
+            <h2>Email</h2>
+            <p><a href="mailto:{{email}}">{{email}}</a></p>
+          </section>
+          
+          <section>
+            <h2>Telephone</h2>
+            <p><a href="tel:{{telephone}}">{{telephone}}</a></p>
+          </section>
+          
+        </div>
+  
+        <div class="content">
+        {{#markdown}}
+        {{>body}}
+        {{/markdown}}
+        </div>
+  
+      </div>
+    
+    </div>
+  
+  </div>
+  
+</body>
+
+</html>
