@@ -3,6 +3,7 @@
   border-width: 1px 0;
   border-top-color: $accent;
   display: flex;
+  margin-bottom: $base-margin;
   
   & > section {
     flex: 1;
@@ -13,7 +14,7 @@
   }
   
   h2 {
-    margin: $base-margin 0 16px;
+    margin: $base-margin 0 8px;
   }
   
   p {
