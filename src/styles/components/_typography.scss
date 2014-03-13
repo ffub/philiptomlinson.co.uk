@@ -21,7 +21,7 @@ a {
 
 // Bold items are darker too
 h1, h2, h3, h4, strong, b {
-  color: hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 15%);
   font-weight: 800;
 }
 
@@ -49,4 +49,8 @@ h3 {
   font-weight: 300;
   font-size: 30px;
   width: 90%;
+}
+
+ul {
+  padding-left: 24px;
 }
