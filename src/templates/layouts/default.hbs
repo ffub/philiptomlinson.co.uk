@@ -8,8 +8,10 @@
   <meta charset="utf-8">
   <meta name="description" content="{{description}}">
   
-  <!-- Web fonts -->
+  <!-- Web fonts for above IE8 only -->
+  <!--[if gt IE 8]><!-->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7540672/781204/css/fonts.css" />
+  <!--<![endif]-->
   
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
@@ -20,7 +22,7 @@
   
   <div class="page">
     
-    <div class="row">
+    <div class="main-grid">
   
       <div class="left">
       
@@ -39,16 +41,20 @@
         </header>
         
         <div class="contact">
-        
-          <section>
-            <h2>Email</h2>
-            <p><a href="mailto:{{email}}">{{email}}</a></p>
-          </section>
           
-          <section>
-            <h2>Telephone</h2>
-            <p><a href="tel:{{telephone}}">{{telephone}}</a></p>
-          </section>
+          <div class="row">
+        
+            <div class="column">
+              <h2>Email</h2>
+              <p><a href="mailto:{{email}}">{{email}}</a></p>
+            </div>
+          
+            <div class="column">
+              <h2>Telephone</h2>
+              <p><a href="tel:{{telephone}}">{{telephone}}</a></p>
+            </div>
+          
+          </div>
           
         </div>
   

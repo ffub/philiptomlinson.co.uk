@@ -2,15 +2,11 @@
   border: 1px solid hsl(0, 0%, 80%);
   border-width: 1px 0;
   border-top-color: $accent;
-  display: flex;
+  display: block;
   margin-bottom: $base-margin;
   
-  & > section {
-    flex: 1;
-  }
-  
-  section + section {
-    margin-left: 20px;
+  .column {
+    width: 50%;
   }
   
   h2 {

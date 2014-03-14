@@ -9,7 +9,7 @@ body {
   padding: 60px 30px;
 }
 
-.row {
+.main-grid {
   
   position: relative;
   
@@ -25,5 +25,17 @@ body {
   .right {
     width: 690px;
     margin-left: 230px + 40px;
+  }
+}
+
+.row {
+  margin: 0 -20px;
+  @include clearfix;
+  
+  .column {
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
   }
 }
