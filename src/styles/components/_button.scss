@@ -26,6 +26,11 @@ button::-moz-focus-inner {
     border: 1px solid #eee;
     background: darken(#eee, 2%);
   }
+  
+  i {
+    color: hsl(0, 0%, 60%);
+    margin-right: 4px;
+  }
 }
 
 .button-block {
