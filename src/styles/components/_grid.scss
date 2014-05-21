@@ -30,7 +30,7 @@ body {
 
 .row {
   margin: 0 -20px;
-  @include clearfix;
+  @extend %clearfix;
   
   .column {
     padding: 0 20px;

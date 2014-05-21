@@ -13,7 +13,6 @@ module.exports = function(grunt) {
     sass: {
       all: {
         options: {
-          compass: true,
           require: 'sass-globbing',
           loadPath: [ 'bower_components/' ],
         },
@@ -27,6 +26,13 @@ module.exports = function(grunt) {
       all: {
         src: 'build/assets/styles/app.css'
       },  
+    },
+
+    concat: {
+      css: {
+        src: ['bower_components/normalize.css/normalize.css', 'build/assets/styles/app.css'],
+        dest: 'build/assets/styles/app.css',
+      },
     },
     
     /* Images */
@@ -104,7 +110,8 @@ module.exports = function(grunt) {
   
   grunt.registerTask('css', [
     'sass',
-    'newer:autoprefixer:all'
+    'newer:autoprefixer:all',
+    'concat:css'
   ]);
   
   grunt.registerTask('assets', [
