@@ -26,8 +26,12 @@
       
         <img src="{{assets}}/images/portrait.jpg">
         
-        <p><a class="button button-block" href="{{linkedin}}">View on LinkedIn</a></p>
-        <p><a class="button button-block" href="mailto:{{email}}">Get in Touch</a></p>
+        <p><a class="button button-block"
+            href="{{linkedin}}"
+            onclick="ga('send','event','Profile','LinkedIn')">View on LinkedIn</a></p>
+        <p><a class="button button-block"
+            onclick="ga('send','event','Contact','Email')"
+            href="mailto:{{email}}">Get in Touch</a></p>
       
       </div>
   
@@ -44,12 +48,12 @@
         
             <div class="column">
               <h2>Email</h2>
-              <p><a href="mailto:{{email}}">{{email}}</a></p>
+              <p><a href="mailto:{{email}}" onclick="ga('send','event','Contact','Email')">{{email}}</a></p>
             </div>
           
             <div class="column">
               <h2>Telephone</h2>
-              <p><a href="tel:{{telephone}}">{{telephone}}</a></p>
+              <p><a href="tel:{{telephone}}" onclick="ga('send','event','Contact','Phone')">{{telephone}}</a></p>
             </div>
           
           </div>
