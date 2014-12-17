@@ -9,15 +9,11 @@ body {
   line-height: $base-line-height;
   font-size: $base-font-size;
   font-weight: 400;
-  @media only screen and (-webkit-min-device-pixel-ratio: 1) {
-    -webkit-font-smoothing: antialiased;
-  }
 }
 
 a {
   color: $color-link;
   text-decoration: none;
-  -webkit-font-smoothing: subpixel-antialiased;
   
   &:hover {
     border-bottom: 1px dotted hsl(0, 0%, 80%);
@@ -28,7 +24,6 @@ a {
 h1, h2, h3, h4, strong, b {
   color: hsl(0, 0%, 15%);
   font-weight: 600;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1 {

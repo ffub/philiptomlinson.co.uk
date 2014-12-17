@@ -98,7 +98,7 @@ module.exports = function(grunt) {
       live: {
         options: {
           src: "build/",
-          dest: "/sites/www.philiptomlinson.co.uk",
+          dest: "/sites/philiptomlinson.co.uk",
           host: "stomlinson.org",
         }
       }
