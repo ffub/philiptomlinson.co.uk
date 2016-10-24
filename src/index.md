@@ -4,6 +4,7 @@ description: Independent Metals and Minerals Economics Consultant
 email: philip@philiptomlinson.co.uk
 telephone: +44 208 650 7994
 linkedin: http://www.linkedin.com/pub/philip-tomlinson/a/496/840
+layout: default.hbs
 ---
 
 Philip spent most of his career at the [CRU group](http://www.crugroup.com), from which he retired in December 2013. He is now available for consulting projects, as an independent consultant or on a subcontracted basis.

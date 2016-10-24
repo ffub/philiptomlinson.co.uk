@@ -1,7 +1,19 @@
-@import "generic.clearfix/generic.clearfix";
+.clearfix,
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
 
 @import "vars";
 
-@import "components/*";
+@import "components/button";
+@import "components/grid";
+@import "components/hr";
+@import "components/typography";
 
-@import "modules/*";
+@import "modules/contact";
