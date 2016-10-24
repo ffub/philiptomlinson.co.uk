@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+  padding: 60px 30px;
+}
+
+.main-grid {
+  
+  position: relative;
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .left {
+    position: fixed;
+    width: 230px;
+  }
+  
+  .right {
+    width: 690px;
+    margin-left: 230px + 40px;
+  }
+}
+
+.row {
+  margin: 0 -20px;
+  @extend %clearfix;
+  
+  .column {
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+  }
+}

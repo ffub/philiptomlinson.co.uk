@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <title>{{title}} - {{description}}</title>
+  <meta charset="utf-8">
+  <meta name="description" content="{{description}}">
+  
+  <!-- Web fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+  
+</head>
+
+<body>
+  
+  <div class="page">
+    
+    <div class="main-grid">
+  
+      <div class="left">
+      
+        <img src="{{assets}}/images/portrait.jpg">
+        
+        <p><a class="button button-block"
+            href="{{linkedin}}"
+            onclick="ga('send','event','Profile','LinkedIn')">View on LinkedIn</a></p>
+        <p><a class="button button-block"
+            onclick="ga('send','event','Contact','Email')"
+            href="mailto:{{email}}">Get in Touch</a></p>
+      
+      </div>
+  
+      <div class="right">
+  
+        <header class="banner">
+          <h1>{{title}}</h1>
+          <h1 class="subtitle">{{description}}</h1>
+        </header>
+        
+        <div class="contact">
+          
+          <div class="row">
+        
+            <div class="column">
+              <h2>Email</h2>
+              <p><a href="mailto:{{email}}" onclick="ga('send','event','Contact','Email')">{{email}}</a></p>
+            </div>
+          
+            <div class="column">
+              <h2>Telephone</h2>
+              <p><a href="tel:{{telephone}}" onclick="ga('send','event','Contact','Phone')">{{telephone}}</a></p>
+            </div>
+          
+          </div>
+          
+        </div>
+  
+        <div class="content">
+        {{#markdown}}
+        {{>body}}
+        {{/markdown}}
+        </div>
+  
+      </div>
+    
+    </div>
+  
+  </div>
+  
+  <!-- JavaScript -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-853013-3', 'philiptomlinson.co.uk');
+    ga('send', 'pageview');
+
+  </script>
+  
+</body>
+
+</html>
